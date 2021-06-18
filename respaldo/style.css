@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fuentes dentro de carpeta */
+@font-face {
+  font-family: "title";
+  src: url(../fonts/Harakiri\ Special.otf);
+}
+
+@font-face {
+  font-family: "link1";
+  src: url(../fonts/Kingoff-Regular.ttf);
+}
+
+@font-face {
+  font-family: "link2";
+  src: url(../fonts/Hakio\ Free\ Trial.ttf);
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+/* incio del welcome */
+
+/* menu index */
+
+.menu-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../imagenes/village-background-index-01.jpg");
+  background-position: bottom;
+  background-size: cover;
+  /* background-repeat: repeat-x; */
+}
+
+.yokai-village {
+  font-family: "title";
+  font-size: 70px;
+  color: brown;
+  margin-top: -400px;
+}
+
+.galeria-link {
+  font-size: 25px;
+  font-family: "link2";
+  text-decoration: none;
+  font-weight: none;
+  background-color: black;
+  color: white;
+  max-width: 40%;
+  border: none;
+}
+
+.galeria-link:hover {
+  text-decoration: line-through;
+  background: white;
+  color: black;
+}
+
+.kitsune {
+  position: absolute;
+  top: 170px;
+  width: 40px;
+  transition: all 0.5s ease-in-out;
+}
+
+.kitsune:hover {
+  transform: scale(3) translateY(-10px);
+  opacity: 0;
+}
+
+iframe {
+  position: absolute;
+  left: 01px;
+  bottom: 01px;
+}
+
+/* font styles for cards */
+
+.container h4 {
+  font-family: "title";
+  font-size: 3em;
+}
+
+/* final del welcome */
+
+/* Header Galería */
+
+.header-galeria {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 70px 0 70px 0;
+}
+
+/* esto modifica las imagenes dentro de los links */
+.header-galeria a img {
+  max-width: 50px;
+  margin: 0 20px;
+}
+.header-galeria .center img {
+  max-width: 100px;
+}
+
+/*fin titulos galeria section*/
+
+/* header kugosan */
+
+.header-kugosan {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 70px 0 70px 0;
+}
+
+/* esto modifica las imagenes dentro de los links */
+.header-kugosan a img {
+  max-width: 50px;
+  margin: 0 20px;
+}
+.header-kugosan .center img {
+  max-width: 100px;
+}
+
+.container h1 {
+  font-family: "title";
+}
+
+/* header-lolita */
+/* esto modifica las imagenes dentro de los links */
+.header-lolita {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 70px 0 70px 0;
+}
+
+.header-lolita a img {
+  max-width: 50px;
+  margin: 0 20px;
+}
+.header-lolita .center img {
+  max-width: 100px;
+}
+
+.container h1 {
+  font-family: "title";
+}
+
+/* header-lolita */
+
+.header-yokai {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 70px 0 70px 0;
+}
+
+/* esto modifica las imagenes dentro de los links */
+.header-yokai a img {
+  max-width: 50px;
+  margin: 0 20px;
+}
+.header-yokai .center img {
+  max-width: 100px;
+}
+
+.container h1 {
+  font-family: "title";
+}

@@ -1,0 +1,13 @@
+/* d-flex align-items-center */
+
+.carrousel-texts {
+  display: flex;
+  align-items: center;
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    color: $third-color;
+    background-color: $primary-color;
+  }
+}

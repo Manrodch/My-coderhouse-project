@@ -1,0 +1,33 @@
+.header-galeria {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 70px 0 70px 0;
+
+  a img {
+    max-width: 50px;
+    margin: 0 20px;
+  }
+  .center img {
+    max-width: 100px;
+  }
+
+  /* variaciones del header */
+
+  &-1 {
+    background-color: violet;
+  }
+  &-2 {
+    background-color: rgb(88, 25, 88);
+  }
+  &-3 {
+    background-color: rgb(84, 207, 105);
+  }
+  &-4 {
+    background-color: black;
+  }
+}
+
+/* elementos html van a tener clase "header-galeria"
+pero cada uno se va a llamar tambièn , header-galeria-1 hasta el 3
+ejm. class="header-galeria header-galeria-1" */

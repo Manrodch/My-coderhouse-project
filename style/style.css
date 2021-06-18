@@ -1,0 +1,200 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main colors */
+.menu-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../imagenes/village-background-index-01.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; */
+}
+
+.yokai-village {
+  font-family: "titles-font";
+  /* font-size: 4rem; */
+  color: #b62b2b;
+  font-weight: lighter;
+  margin-top: -400px;
+}
+@media only screen and (max-width: 401px) {
+  .yokai-village {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .yokai-village {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .yokai-village {
+    font-size: 4rem;
+  }
+}
+
+.galeria-link {
+  /* font-size: 2rem; */
+  font-family: "titles-font";
+  text-decoration: none;
+  font-weight: lighter;
+  background-color: black;
+  color: white;
+  max-width: 40%;
+  border: none;
+}
+.galeria-link:hover {
+  text-decoration: line-through;
+  background: white;
+  color: black;
+}
+@media only screen and (max-width: 401px) {
+  .galeria-link {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .galeria-link {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .galeria-link {
+    font-size: 2rem;
+  }
+}
+
+.kitsune {
+  position: relative;
+  top: 10px;
+  width: 40px;
+  transition: all 0.5s ease-in-out;
+}
+.kitsune:hover {
+  transform: scale(3) translateY(-10px);
+  opacity: 0;
+}
+
+iframe {
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+}
+
+/* final del welcome */
+/* fonts for titles */
+@font-face {
+  src: url("../fonts/Harakiri Special.otf");
+  font-family: "titles-font";
+  font-weight: 100;
+  font-display: swap;
+}
+/* content fonts */
+@font-face {
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-family: "contents-font";
+  font-weight: 100;
+  font-display: swap;
+}
+h4 {
+  font-family: "titles-font";
+}
+@media only screen and (max-width: 401px) {
+  h4 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  h4 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 961px) {
+  h4 {
+    font-size: 3rem;
+  }
+}
+
+p {
+  font-family: "contents-font";
+  font-size: 1.5rem;
+  text-align: justify;
+}
+@media only screen and (max-width: 401px) {
+  p {
+    font-size: 0.5;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  p {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 961px) {
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.header-galeria {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 70px 0 70px 0;
+  /* variaciones del header */
+}
+.header-galeria a img {
+  max-width: 50px;
+  margin: 0 20px;
+}
+.header-galeria .center img {
+  max-width: 100px;
+}
+.header-galeria-1 {
+  background-color: violet;
+}
+.header-galeria-2 {
+  background-color: #581958;
+}
+.header-galeria-3 {
+  background-color: #54cf69;
+}
+.header-galeria-4 {
+  background-color: black;
+}
+
+/* elementos html van a tener clase "header-galeria"
+pero cada uno se va a llamar tambièn , header-galeria-1 hasta el 3
+ejm. class="header-galeria header-galeria-1" */
+/* gallery-cards */
+/* titles font */
+.container h4 {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+/* d-flex align-items-center */
+.carrousel-texts {
+  display: flex;
+  align-items: center;
+}
+.carrousel-texts h4 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

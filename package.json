@@ -1,0 +1,13 @@
+{
+  "name": "yokai-village-bootstrap-queries-ultimaver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch" :"sass --watch scss/main.scss style/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

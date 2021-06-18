@@ -1,0 +1,78 @@
+.menu-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../imagenes/village-background-index-01.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; */
+}
+
+.yokai-village {
+  font-family: "titles-font";
+  /* font-size: 4rem; */
+  color: $secondary-color;
+  font-weight: lighter;
+  margin-top: -400px;
+
+  @media only screen and (max-width: 401px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    font-size: 3rem;
+  }
+  @media only screen and (min-width: 961px) {
+    font-size: 4rem;
+  }
+}
+
+.galeria-link {
+  /* font-size: 2rem; */
+  font-family: "titles-font";
+  text-decoration: none;
+  font-weight: lighter;
+  background-color: $primary-color;
+  color: $third-color;
+  max-width: 40%;
+  border: none;
+  &:hover {
+    text-decoration: line-through;
+    background: $third-color;
+    color: $primary-color;
+  }
+
+  @media only screen and (max-width: 401px) {
+    font-size: 1rem;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    font-size: 1.5rem;
+  }
+  @media only screen and (min-width: 961px) {
+    font-size: 2rem;
+  }
+}
+
+.kitsune {
+  position: relative;
+  top: 10px;
+  width: 40px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(3) translateY(-10px);
+    opacity: 0;
+  }
+}
+
+iframe {
+  position: absolute;
+  left: 01px;
+  bottom: 01px;
+}
+
+/* final del welcome */

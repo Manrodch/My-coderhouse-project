@@ -1,0 +1,53 @@
+/* fonts for titles */
+
+@font-face {
+  // This is parsed as a normal function call that takes a quoted string.
+  src: url("../fonts/Harakiri Special.otf") /* format("truetype") */;
+
+  font-family: "titles-font";
+  font-weight: 100;
+  font-display: swap;
+}
+
+/* content fonts */
+
+@font-face {
+  // This is parsed as a normal function call that takes a quoted string.
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+
+  font-family: "contents-font";
+  font-weight: 100;
+  font-display: swap;
+}
+
+h4 {
+  font-family: "titles-font";
+
+  @media only screen and (max-width: 401px) {
+    font-size: 1rem;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    font-size: 2rem;
+  }
+  @media only screen and (min-width: 961px) {
+    font-size: 3rem;
+  }
+}
+
+p {
+  font-family: "contents-font";
+  font-size: 1.5rem;
+  text-align: justify;
+
+  @media only screen and (max-width: 401px) {
+    font-size: 0.5;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    font-size: 0.5rem;
+  }
+  @media only screen and (min-width: 961px) {
+    font-size: 0.8rem;
+  }
+}
