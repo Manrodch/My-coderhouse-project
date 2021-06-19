@@ -197,4 +197,9 @@ ejm. class="header-galeria header-galeria-1" */
   background-color: black;
 }
 
+.page-not-found {
+  background-color: "$primary-color";
+  font-family: "title-fonts";
+}
+
 /*# sourceMappingURL=style.css.map */
