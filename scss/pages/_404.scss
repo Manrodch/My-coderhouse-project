@@ -1,4 +1,25 @@
-.page-not-found {
-  background-color: "$primary-color";
-  font-family: "title-fonts";
+.lola-working {
+  background-color: $primary-color;
+  padding: 133px;
+  display: grid;
+  gap: 05%;
+  grid-template-columns: 50% 50%;
+  color: $third-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-family: "titles-font";
+    font-weight: lighter;
+    font-size: 3rem;
+  }
+
+  a {
+    font-family: "titles-font";
+    background-color: $third-color;
+    text-decoration: none;
+    font-size: 3rem;
+    color: $primary-color;
+  }
 }
