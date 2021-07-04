@@ -202,9 +202,8 @@ ejm. class="header-galeria header-galeria-1" */
   padding: 133px;
   display: grid;
   gap: 5%;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 2 1fr;
   color: white;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
