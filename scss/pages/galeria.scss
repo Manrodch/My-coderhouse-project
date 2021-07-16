@@ -1,0 +1,34 @@
+.concepto {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  background-color: indianred;
+  display: grid;
+  grid-template-columns: repeat(08, auto);
+  grid-template-rows: repeat(08, auto);
+  gap: 1em;
+  padding: 1em 0em 1em 0em;
+  margin: 1em 0em 1em 0em;
+
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mock1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-radius: 15px;
+  }
+
+  .mock2 {
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 15px;
+  }
+}
