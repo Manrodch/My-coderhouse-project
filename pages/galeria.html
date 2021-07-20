@@ -19,9 +19,65 @@
     <title>Gallery</title>
   </head>
 
-  <body class="body-gradient">
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio">Yokai Village</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#cards"
+              >Characters</a
+            >
+            <a class="nav-link" href="#products">Products</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="https://wa.me/541158685958"
+                    >Whatsapp</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="mailto:manuel.rodriguez.ch1@gmail.com "
+                    >Mail</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <!-- Header -->
-    <header>
+    <header id="inicio">
       <div class="header-galeria">
         <a
           href="https://www.behance.net/Manoloilustrador"
@@ -49,9 +105,50 @@
       </div>
     </header>
 
+    <!-- concepto -->
+    <section class="concepto-grid-container">
+      <div class="concepto-grid">
+        <img
+          class="img-creador"
+          src="../imagenes/creador.png"
+          alt="imagen del ilustrador Manuel Rodriguez"
+        />
+        <h4>Yokai village nights</h4>
+        <p>
+          Yokai Village nace de la creación de personajes variados, basados en
+          la cultura japonesas con una gran influencia por el arte del manga.
+          Mis creaciones siempre buscan una historia, una personalidad, una
+          crítica a la actual sociedad moderna ubicándola dentro de un mundo
+          paranormal y humor bastante crudo. Así fué como después de crear a los
+          Yokais, diseñé el personaje de kugo san. Un Aventurero que cae en
+          Yokai Village en búsqueda de un nuevo horizonte, sin saber a donde se
+          dirigía, se encuentra en una ciudad la cual habitan personajes
+          bizzaros y su enamorada Lolita, la cual no puede dejar de pensar en él
+          y constantemente lo acosa con el fin de llevarselo a la cama.
+        </p>
+        <img
+          class="img-1-concepto"
+          src="../imagenes/lolita-1.jpg"
+          alt="imágen de lolita con su amante pepino"
+        />
+
+        <img
+          class="img-2-concepto"
+          src="../imagenes/lolita-2.jpg"
+          alt="imágen de lolita con sus ganancias"
+        />
+
+        <img
+          class="img-3-concepto"
+          src="../imagenes/lolita-3.jpg"
+          alt="imágen de lolita con su amante panda"
+        />
+      </div>
+    </section>
+
     <!-- gallery cards -->
 
-    <section class="container">
+    <section class="container" id="cards">
       <div>
         <div class="row">
           <div class="col-lg-4 col-sm-12 col-12">
@@ -170,6 +267,57 @@
             >
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!--Mock grids -->
+
+    <section class="mock-grid-container" id="products">
+      <div class="mock-grid">
+        <img class="mock1" src="../imagenes/nure mock.png" alt="" />
+        <img
+          class="mock2"
+          src="../imagenes/Black_T_Shirt_Model_Front_View_Mockup.png"
+          alt=""
+        />
+        <img
+          class="mock3"
+          src="../imagenes/White_T_Shirt_Model_Front_View_Mockup.png"
+          alt="mock up de remera diseño tengu"
+        />
+
+        <img
+          class="mock4"
+          src="../imagenes/kozo-mock.png"
+          alt="Mock-up de remere diseño kitsune-kozo"
+        />
+
+        <img
+          class="mock5"
+          src="../imagenes/mock5.png"
+          alt="Mock-up sweater diseño raiko y daruma"
+        />
+
+        <h4 class="mockstitle">yokai products</h4>
+
+        <p class="mocksinfo">
+          Te gustan mis diseños de Yokais? hay variedad de remeras, sweaters,
+          musculosas unisex. Todos los diseños que mostramos en nuestras
+          secciones están disponibles para adaptarlos a tu prenda favorita.
+        </p>
+
+        <img
+          class="mock6"
+          src="../imagenes/daruma.jpg"
+          alt="imagen de daruma"
+        />
+
+        <img
+          class="mock7"
+          src="../imagenes/shuten-doji.jpg"
+          alt="imagen de shuten doji"
+        />
+        <img class="mock8" src="../imagenes/raiko.jpg" alt="imagen raiko" />
       </div>
     </section>
 
