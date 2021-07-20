@@ -23,9 +23,10 @@
 .yokai-village {
   font-family: "titles-font";
   /* font-size: 4rem; */
-  color: #b62b2b;
+  color: white;
+  background-color: black;
   font-weight: lighter;
-  margin-top: -400px;
+  margin-top: -100px;
 }
 @media only screen and (max-width: 401px) {
   .yokai-village {
@@ -76,12 +77,12 @@
 
 .kitsune {
   position: relative;
-  top: 10px;
-  width: 40px;
+  top: 40px;
+  width: 100px;
   transition: all 0.5s ease-in-out;
 }
 .kitsune:hover {
-  transform: scale(3) translateY(-10px);
+  transform: scale(1) translateY(-10px);
   opacity: 0;
 }
 
@@ -194,26 +195,234 @@ ejm. class="header-galeria header-galeria-1" */
   display: flex;
   justify-content: center;
   color: white;
-  background-color: #b62b2b;
+  background-color: black;
 }
 
-/* Grid de mock ups en remeras */
-.mock-grid {
-  box-sizing: border-box;
+/* concepto */
+.concepto-grid-container {
+  display: flex;
   justify-content: center;
-  width: 100vw;
-  height: 90vh;
+  margin: 4em 0 4em 0;
+  width: 100%;
+  height: 700px;
   background-color: black;
+}
+@media only screen and (max-width: 401px) {
+  .concepto-grid-container {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 600px;
+    background-color: white;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .concepto-grid-container {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .concepto-grid-container {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+  }
+}
+
+.concepto-grid {
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1em;
+  padding: 1em 1em 1em 1em;
+  z-index: 1;
+}
+@media only screen and (max-width: 401px) {
+  .concepto-grid {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 600px;
+    background-color: white;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .concepto-grid {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1em;
+    padding: 1em 1em 1em 1em;
+    z-index: 1;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .concepto-grid {
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1em;
+    padding: 1em 1em 1em 1em;
+    z-index: 1;
+  }
+}
+.concepto-grid .img-creador {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.concepto-grid .img-creador:hover {
+  box-shadow: -10px 10px 0px white;
+  transition: transform 0.8s;
+}
+.concepto-grid .img-1-concepto {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.concepto-grid .img-1-concepto:hover {
+  transform: scale(2);
+  transition: transform 0.8s;
+}
+.concepto-grid .img-2-concepto {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.concepto-grid .img-2-concepto:hover {
+  transform: scale(2);
+  transition: transform 0.8s;
+}
+.concepto-grid .img-3-concepto {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.concepto-grid .img-3-concepto:hover {
+  transform: scale(2);
+  transition: transform 0.8s;
+}
+.concepto-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+.concepto-grid h4 {
+  color: white;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+.concepto-grid p {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+/* mock grids */
+.mock-grid-container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  margin: 4em 0 4em 0;
+  width: 100%;
+  height: 950px;
+}
+@media only screen and (max-width: 401px) {
+  .mock-grid-container {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 600px;
+    background-color: white;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .mock-grid-container {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .mock-grid-container {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+  }
+}
+
+.mock-grid {
+  width: 70%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
   gap: 1em;
   padding: 1em 1em 1em 1em;
-  margin: 1em 0em 1em 0em;
+  z-index: 1;
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .mock-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1em;
+    padding: 1em 1em 1em 1em;
+    z-index: 1;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .mock-grid {
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1em;
+    padding: 1em 1em 1em 1em;
+    z-index: 1;
+  }
 }
 .mock-grid h4 {
   display: flex;
   align-items: center;
+  justify-content: center;
   grid-column-start: 6;
   grid-column-end: 9;
   grid-row-start: 6;
@@ -259,12 +468,34 @@ ejm. class="header-galeria header-galeria-1" */
   grid-row-end: 8;
   color: white;
 }
-
+.mock-grid .mock6 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+.mock-grid .mock7 {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+.mock-grid .mock8 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
 .mock-grid img {
   border-radius: 15px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.2s;
+}
+.mock-grid img:hover {
+  transform: scale(2);
+  transition: transform 0.8s;
 }
 
 /*# sourceMappingURL=style.css.map */

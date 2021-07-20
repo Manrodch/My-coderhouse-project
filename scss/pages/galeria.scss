@@ -1,21 +1,220 @@
-/* Grid de mock ups en remeras */
-
-.mock-grid {
-  box-sizing: border-box;
+/* concepto */
+.concepto-grid-container {
+  display: flex;
   justify-content: center;
-  width: 100vw;
-  height: 90vh;
+  margin: 4em 0 4em 0;
+  width: 100%;
+  height: 700px;
   background-color: $primary-color;
+
+  @media only screen and (max-width: 401px) {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 600px;
+    background-color: $third-color;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 600px;
+    background-color: $primary-color;
+  }
+  @media only screen and (min-width: 961px) {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 700px;
+    background-color: $primary-color;
+  }
+}
+
+.concepto-grid {
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(05, 1fr);
+  gap: 1em;
+  padding: 1em 1em 1em 1em;
+  z-index: 1;
+
+  @media only screen and (max-width: 401px) {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 600px;
+    background-color: $third-color;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(05, 1fr);
+    gap: 1em;
+    padding: 1em 1em 1em 1em;
+    z-index: 1;
+  }
+  @media only screen and (min-width: 961px) {
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(05, 1fr);
+    gap: 1em;
+    padding: 1em 1em 1em 1em;
+    z-index: 1;
+  }
+
+  .img-creador {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    &:hover {
+      box-shadow: -10px 10px 0px $third-color;
+      transition: transform 0.8s;
+    }
+  }
+
+  .img-1-concepto {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    &:hover {
+      transform: scale(2);
+      transition: transform 0.8s;
+    }
+  }
+
+  .img-2-concepto {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    &:hover {
+      transform: scale(2);
+      transition: transform 0.8s;
+    }
+  }
+
+  .img-3-concepto {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    &:hover {
+      transform: scale(2);
+      transition: transform 0.8s;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.2s;
+  }
+
+  h4 {
+    color: $third-color;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+  }
+  p {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+
+    color: $third-color;
+  }
+}
+
+/* mock grids */
+
+.mock-grid-container {
+  display: flex;
+  justify-content: center;
+  background-color: $primary-color;
+  margin: 4em 0 4em 0;
+  width: 100%;
+  height: 950px;
+
+  @media only screen and (max-width: 401px) {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 600px;
+    background-color: $third-color;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 600px;
+    background-color: $primary-color;
+  }
+  @media only screen and (min-width: 961px) {
+    justify-content: center;
+    margin: 4em 0 4em 0;
+    width: 100%;
+    height: 700px;
+    background-color: $primary-color;
+  }
+}
+.mock-grid {
+  width: 70%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(08, 1fr);
   grid-template-rows: repeat(08, 1fr);
   gap: 1em;
   padding: 1em 1em 1em 1em;
-  margin: 1em 0em 1em 0em;
+  z-index: 1;
+
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(08, 1fr);
+    grid-template-rows: repeat(08, 1fr);
+    gap: 1em;
+    padding: 1em 1em 1em 1em;
+    z-index: 1;
+  }
+  @media only screen and (min-width: 961px) {
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(08, 1fr);
+    grid-template-rows: repeat(08, 1fr);
+    gap: 1em;
+    padding: 1em 1em 1em 1em;
+    z-index: 1;
+  }
 
   h4 {
     display: flex;
     align-items: center;
+    justify-content: center;
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 6;
@@ -67,14 +266,38 @@
     grid-row-end: 8;
     color: $third-color;
   }
-}
 
-.mock-grid img {
-  border-radius: 15px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  .mock6 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 9;
+  }
 
-  :hover {
+  .mock7 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 8;
+    grid-row-end: 9;
+  }
+
+  .mock8 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 9;
+  }
+
+  img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(2);
+      transition: transform 0.8s;
+    }
   }
 }
