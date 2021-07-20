@@ -20,8 +20,64 @@
   </head>
 
   <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio">Yokai Village</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#cards"
+              >Characters</a
+            >
+            <a class="nav-link" href="#products">Products</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="https://wa.me/541158685958"
+                    >Whatsapp</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="mailto:manuel.rodriguez.ch1@gmail.com "
+                    >Mail</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <!-- Header -->
-    <header>
+    <header id="inicio">
       <div class="header-galeria">
         <a
           href="https://www.behance.net/Manoloilustrador"
@@ -64,8 +120,8 @@
           Mis creaciones siempre buscan una historia, una personalidad, una
           crítica a la actual sociedad moderna ubicándola dentro de un mundo
           paranormal y humor bastante crudo. Así fué como después de crear a los
-          Yokais, diseñé el personaje de kugo san. Un Aventuro que cae en Yokai
-          Village en búsqueda de un nuevo horizonte, sin saber a donde se
+          Yokais, diseñé el personaje de kugo san. Un Aventurero que cae en
+          Yokai Village en búsqueda de un nuevo horizonte, sin saber a donde se
           dirigía, se encuentra en una ciudad la cual habitan personajes
           bizzaros y su enamorada Lolita, la cual no puede dejar de pensar en él
           y constantemente lo acosa con el fin de llevarselo a la cama.
@@ -92,7 +148,7 @@
 
     <!-- gallery cards -->
 
-    <section class="container">
+    <section class="container" id="cards">
       <div>
         <div class="row">
           <div class="col-lg-4 col-sm-12 col-12">
@@ -216,7 +272,7 @@
 
     <!--Mock grids -->
 
-    <section class="mock-grid-container">
+    <section class="mock-grid-container" id="products">
       <div class="mock-grid">
         <img class="mock1" src="../imagenes/nure mock.png" alt="" />
         <img
