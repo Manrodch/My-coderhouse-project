@@ -9,10 +9,10 @@
 
   @media only screen and (max-width: 401px) {
     justify-content: center;
-    margin: 4em 0 4em 0;
+    margin: 3em 0 3em 0;
     width: 100%;
-    height: 600px;
-    background-color: $third-color;
+    height: 400px;
+    background-color: $primary-color;
   }
 
   @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -44,10 +44,14 @@
 
   @media only screen and (max-width: 401px) {
     justify-content: center;
-    margin: 4em 0 4em 0;
     width: 100%;
-    height: 600px;
-    background-color: $third-color;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(05, 1fr);
+    gap: 1em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    z-index: 1;
   }
 
   @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -159,10 +163,10 @@
 
   @media only screen and (max-width: 401px) {
     justify-content: center;
-    margin: 4em 0 4em 0;
+    margin: 3em 0 3em 0;
     width: 100%;
-    height: 600px;
-    background-color: $third-color;
+    height: 400px;
+    background-color: $primary-color;
   }
 
   @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -189,6 +193,17 @@
   gap: 1em;
   padding: 1em 1em 1em 1em;
   z-index: 1;
+
+  @media only screen and (max-width: 401px) {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(08, 1fr);
+    grid-template-rows: repeat(08, 1fr);
+    gap: 1em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    z-index: 1;
+  }
 
   @media only screen and (min-width: 401px) and (max-width: 960px) {
     width: 100%;

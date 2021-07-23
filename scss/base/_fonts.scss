@@ -24,7 +24,7 @@ h4 {
   font-family: "titles-font";
 
   @media only screen and (max-width: 401px) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -41,7 +41,7 @@ p {
   text-align: justify;
 
   @media only screen and (max-width: 401px) {
-    font-size: 0.5;
+    font-size: 0.5rem;
   }
 
   @media only screen and (min-width: 401px) and (max-width: 960px) {
